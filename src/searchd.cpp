@@ -7618,7 +7618,7 @@ void SendResult ( int iVer, ISphOutputBuffer_c & tOut, const CSphQueryResult * p
 					}
 				case SPH_ATTR_FACTORS:
 				case SPH_ATTR_FACTORS_JSON:
-					{
+					{              // setselect factors()
 						if ( iVer<0x11C )
 						{
 							tOut.SendDword ( 0 );
